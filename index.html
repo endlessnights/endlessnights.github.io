@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ГОСТ ASH-3.0 — Полная система + Конвертер</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.20.7/dist/css/uikit.min.css"/>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.7/dist/js/uikit-icons.min.js"></script>
+
+    <style>
+        body { background: #f5f5f5; }
+        .ash-card { background: white; padding: 25px; border-radius: 12px; }
+        .ash-input { width: 100%; }
+
+        /* Более широкий контейнер */
+        .ash-container {
+            max-width: 1600px;
+            margin: 40px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="ash-container">
+
+    <h1 class="uk-heading-medium uk-text-center">ГОСТ ASH-3.0</h1>
+    <p class="uk-text-lead uk-text-center">Аршачная система измерений + конвертер</p>
+
+    <div class="uk-grid-large uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
+
+        <!-- Левая колонка — таблицы -->
+        <div>
+            <div class="ash-card" style="margin-bottom:50px;">
+                <h2 class="uk-heading-line"><span>Длина</span></h2>
+                <table class="uk-table uk-table-divider uk-table-hover uk-table-striped">
+                    <tbody>
+                    <tr>
+                        <td>1 мм</td>
+                        <td>0.005 A</td>
+                    </tr>
+                    <tr>
+                        <td>1 см</td>
+                        <td>0.05 A</td>
+                    </tr>
+                    <tr>
+                        <td>1 м</td>
+                        <td>5 A (1 MA)</td>
+                    </tr>
+                    <tr>
+                        <td>1 км</td>
+                        <td>5000 A</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <h2 class="uk-heading-line"><span>Масса</span></h2>
+                <table class="uk-table uk-table-divider uk-table-hover uk-table-striped">
+                    <tbody>
+                    <tr>
+                        <td>1 г</td>
+                        <td>0.00666 T</td>
+                    </tr>
+                    <tr>
+                        <td>1 кг</td>
+                        <td>6.66 T</td>
+                    </tr>
+                    <tr>
+                        <td>100 кг</td>
+                        <td>666 T</td>
+                    </tr>
+                    <tr>
+                        <td>1 тонна</td>
+                        <td>6666 T</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <h2 class="uk-heading-line"><span>Температура</span></h2>
+                <table class="uk-table uk-table-divider uk-table-hover uk-table-striped">
+                    <tbody>
+                    <tr>
+                        <td>0°C</td>
+                        <td>-22 Zh</td>
+                    </tr>
+                    <tr>
+                        <td>25°C</td>
+                        <td>+3 Zh</td>
+                    </tr>
+                    <tr>
+                        <td>100°C</td>
+                        <td>+78 Zh</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <h2 class="uk-heading-line"><span>Время (серии)</span></h2>
+                <table class="uk-table uk-table-divider uk-table-hover uk-table-striped">
+                    <tbody>
+                    <tr>
+                        <td>1 сек</td>
+                        <td>0.000724 S</td>
+                    </tr>
+                    <tr>
+                        <td>1 мин</td>
+                        <td>0.0435 S</td>
+                    </tr>
+                    <tr>
+                        <td>110 секунд</td>
+                        <td>0.0797 S</td>
+                    </tr>
+                    <tr>
+                        <td>1 час</td>
+                        <td>2.608 S</td>
+                    </tr>
+                    <tr>
+                        <td>1 сутки</td>
+                        <td>62.6 S</td>
+                    </tr>
+                    <tr>
+                        <td>1 год</td>
+                        <td>22830 S</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <h2 class="uk-heading-line"><span>Скорость</span></h2>
+                <table class="uk-table uk-table-divider uk-table-hover uk-table-striped">
+                    <tbody>
+                    <tr>
+                        <td>1 м/с</td>
+                        <td>0.72 L</td>
+                    </tr>
+                    <tr>
+                        <td>1 км/ч</td>
+                        <td>0.2 L</td>
+                    </tr>
+                    <tr>
+                        <td>100 км/ч</td>
+                        <td>20 L</td>
+                    </tr>
+                    <tr>
+                        <td>800 км/ч</td>
+                        <td>160 L</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <h2 class="uk-heading-line"><span>Давление</span></h2>
+                <table class="uk-table uk-table-divider uk-table-hover uk-table-striped">
+                    <tbody>
+                    <tr>
+                        <td>100 Па</td>
+                        <td>0.1 Sd</td>
+                    </tr>
+                    <tr>
+                        <td>1 кПа</td>
+                        <td>1 Sd</td>
+                    </tr>
+                    <tr>
+                        <td>1 атмосфера</td>
+                        <td>101.3 Sd</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Правая колонка — конвертер -->
+        <div>
+            <div class="ash-card">
+                <h2 class="uk-heading-line"><span>ASH-конвертер</span></h2>
+
+                <!-- Длина -->
+                <label>Сантиметры → Аршаки</label>
+                <input id="cm" class="uk-input ash-input" type="number" oninput="convert()">
+                <div id="cm_out" class="uk-margin-small uk-text-bold"></div>
+
+                <!-- Масса -->
+                <label>Килограммы → Тяжаки</label>
+                <input id="kg" class="uk-input ash-input" type="number" oninput="convert()">
+                <div id="kg_out" class="uk-margin-small uk-text-bold"></div>
+
+                <!-- Температура -->
+                <label>Градусы Цельсия → Жарники</label>
+                <input id="c" class="uk-input ash-input" type="number" oninput="convert()">
+                <div id="c_out" class="uk-margin-small uk-text-bold"></div>
+
+                <!-- Скорость -->
+                <label>Скорость км/ч → Летуны</label>
+                <input id="kmh" class="uk-input ash-input" type="number" oninput="convert()">
+                <div id="kmh_out" class="uk-margin-small uk-text-bold"></div>
+
+                <!-- Время -->
+                <label>Минуты → Серии</label>
+                <input id="min" class="uk-input ash-input" type="number" oninput="convert()">
+                <div id="min_out" class="uk-margin-small uk-text-bold"></div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function convert() {
+        // Длина
+        let cm = parseFloat(document.getElementById("cm").value) || 0;
+        document.getElementById("cm_out").innerText =
+            `${cm} см = ${(cm * 0.05).toFixed(4)} A (аршаков)`;
+
+        // Масса
+        let kg = parseFloat(document.getElementById("kg").value) || 0;
+        document.getElementById("kg_out").innerText =
+            `${kg} кг = ${(kg * 6.66).toFixed(4)} T (тяжаков)`;
+
+        // Температура
+        let c = parseFloat(document.getElementById("c").value) || 0;
+        document.getElementById("c_out").innerText =
+            `${c} °C = ${(c - 22).toFixed(2)} Zh (жарников)`;
+
+        // Скорость
+        let kmh = parseFloat(document.getElementById("kmh").value) || 0;
+        document.getElementById("kmh_out").innerText =
+            `${kmh} км/ч = ${(kmh / 5).toFixed(3)} L (летунов)`;
+
+        // Время
+        let minutes = parseFloat(document.getElementById("min").value) || 0;
+        document.getElementById("min_out").innerText =
+            `${minutes} мин = ${(minutes / 23).toFixed(4)} S (серий)`;
+    }
+</script>
+
+</body>
+</html>
